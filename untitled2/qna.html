@@ -5,32 +5,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/sticky-footer.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <link href="css/business-casual.css" rel="stylesheet">
 </head>
 <body>
-<div class="jumbotron">
-    <div class="container text-center">
-        <h1>Study Q & A</h1>
-        </div>
+<!--<div class="jumbotron ">-->
+<!--<div class="container text-center">-->
+<!--<h1>Study Q & A</h1>-->
+<!--</div>-->
+<!--</div>-->
+<div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Q & A</div>
+<div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-white mb-5 d-none d-lg-block">Bit
+    Java Language Study
 </div>
 <!-- 네비게이션 -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse">
+    <!--navbar-fixed-top">-->
     <div class="container-fluid">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="#">Study</a>
         </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">홈</a></li>
-            <li class="active"><a href="#">공지사항</a></li>
-            <li class="active"><a href="#">자유게시판</a></li>
-            <li class="active"><a href="#">Q&A</a></li>
-            <li class="active"><a href="#">자료실</a></li>
-        </ul>
-    <ul class="nav navbar-nav navbar-right">
-    <li><a href="#">정보관리</a></li>
-    <li><a href="#">로그아웃</a></li>
-    </ul>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">홈</a></li>
+                <li class="active"><a href="#">공지사항</a></li>
+                <li class="active"><a href="#">자유게시판</a></li>
+                <li class="active"><a href="qna.html">Q & A</a></li>
+                <li class="active"><a href="#">자료실</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">정보관리</a></li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 <!--네비 끝-->
@@ -121,7 +135,8 @@
         </tbody>
     </Table>
     </hr>
-    <button class="btn btn-default pull-right">글쓰기</button>
+    <!--<button class="btn btn-default pull-right">글쓰기</button>-->
+    <a href="qnaw.html" class="btn btn-default btn-outline-dark pull-right" role="button"> 글쓰기 </a>
     <div class="text-center">
         <ul class="pagination"> <!--부트스트랩에서 제공하는 페이징 마법사(?)-->
             <li><a href="#">1</a></li>
@@ -134,11 +149,16 @@
 </div>
 <!--게시판 끝-->
 <!-- Footer -->
-<footer class="panel-footer navbar-fixed-bottom" style="padding-bottom: 20px">
+<footer class="footer">
     <div class="container">
-        <p><h3 class="text-center">Copyright &copy; 2017 Study</h3></p>
+        <span class="text-muted pull-right">Copyright &copy; 2017 Study</span>
     </div>
 </footer>
+<!--<footer class="panel-footer navbar-fixed-bottom" style="padding-bottom: 10px">-->
+    <!--<div class="container">-->
+        <!--<p><h5 class="text-right">Copyright &copy; 2017 Study</h5></p>-->
+    <!--</div>-->
+<!--</footer>-->
 </body>
 
 
